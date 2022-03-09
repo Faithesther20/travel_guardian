@@ -14,11 +14,15 @@ const places =[
     { name: 'Best Fruits'},
     { name: 'Best Steak'},
     { name: 'Cool Places'},
+    { name: 'Cool Places'},
     { name: 'Best Fruits'},
     { name: 'Best Steak'},
     { name: 'Cool Places'},
     { name: 'Best Fruits'},
-    { name: 'Best Steak'}
+    { name: 'Best Steak'},
+    { name: 'Cool Places'},
+    { name: 'Best Fruits'},
+    { name: 'Best Steak'},
 ];
 
     return(
@@ -43,9 +47,8 @@ const places =[
           </FormControl>
           <Grid container spacing={3} className={classes.list}>
             {places?.map((place, i) => (
-              <Grid key={i} item xs={12}>
+              <Grid item key={i} xs={12}>
                 <PlaceDetails  place={place} />
-                {console.log(place.name)}
               </Grid>
             ))}
           </Grid>
