@@ -1,8 +1,12 @@
 import React from "react";
-
-const PlaceDetails = ({place}) =>{
+import useStyles from './styles';
+import {Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chip} from "@material-ui/core"
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
+import  Rating   from "@material-ui/lab/Rating";
+const PlaceDetails = ({ place }) =>{
     return(
-          <h1>{place.name}</h1>
+        <h1>{place.name}</h1>
     );
 }
 
